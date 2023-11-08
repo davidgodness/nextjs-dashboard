@@ -27,7 +27,17 @@ export default async function Page({
           },
         ]}
       />
-      <Form customers={customers} invoice={invoice} />
+      <Form
+        customers={customers}
+        invoice={
+          invoice ?? {
+            id: id,
+            customer_id: "",
+            amount: 0,
+            status: "pending",
+          }
+        }
+      />
     </main>
   );
 }
