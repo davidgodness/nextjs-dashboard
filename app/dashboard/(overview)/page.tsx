@@ -9,7 +9,7 @@ import {
   RevenueChartSkeleton,
 } from "@/app/ui/skeletons";
 
-// export const dynamic = "force-dynamic";
+export const dynamic = "force-dynamic";
 
 export default async function Page() {
   return (
